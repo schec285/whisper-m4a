@@ -1,0 +1,9 @@
+services:
+  python:
+    image: whisper
+    build: .
+    container_name: whisper
+    working_dir: /workspace/src
+    volumes:
+      - ./src:/workspace/src
+    tty: true
